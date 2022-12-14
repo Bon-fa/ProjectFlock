@@ -9,6 +9,7 @@ public:
     float z;
     float w;
 
+
     BVector() {}                      // costruttore interno con zero informazioni in ingresso
     BVector(float xComp, float yComp) // costruttore con info in ingresso
     {
