@@ -6,7 +6,8 @@ class BVector
 public:
     float x;
     float y;
-
+    float z;
+    
     BVector() {}                      // costruttore interno con zero informazioni in ingresso
     BVector(float xComp, float yComp) // costruttore con info in ingresso
     {
