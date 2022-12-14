@@ -109,6 +109,7 @@ void BVector::normalize()
 }
 
 
+
 void BVector::setRandomValue()
 {
     srand(time(NULL));
