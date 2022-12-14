@@ -1,5 +1,7 @@
 #include "BVector.h"
 #include <cmath>
+#include <cstdlib>
+#include <ctime>
 
 
 void BVector::setvalue(float a, float b)
@@ -104,4 +106,11 @@ void BVector::normalize()
     {
         setvalue(x, y);
     }
+}
+
+void BVector::setRandomValue()
+{
+    srand(time(NULL));
+    x = rand()%3 -1;
+    y = rand()%3 -1;
 }

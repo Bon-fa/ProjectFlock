@@ -6,8 +6,6 @@ class BVector
 public:
     float x;
     float y;
-    float z;
-    float w;
 
     BVector() {}                      // costruttore interno con zero informazioni in ingresso
     BVector(float xComp, float yComp) // costruttore con info in ingresso
@@ -25,6 +23,7 @@ public:
     void scalarSub(float s); //sottrazione fra componenti e scalare
     void scalarMul(float s); //moltiplicazione di un vettore con uno scalare
     void scalarDiv(float s); //divisione di un vettore con uno scalare
+    void setRandomValue(); //setta valori casuali alle componenti x e y
 
     void limitsize(); //limita la dimensione di un vettore
     float dist(const BVector &v); //calcola la distanza tra due vettori
