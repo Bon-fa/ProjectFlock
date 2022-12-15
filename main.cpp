@@ -7,7 +7,7 @@ int main ()
 {
     BVector v1(2,5);
     BVector v2;
-    Boid b(v1, v2);
+    Boid b(v1);
     std::cout << b.acceleration.x << endl;
     std::cout << b.velocity.x << endl;
     std::cout << b.position.x << endl;

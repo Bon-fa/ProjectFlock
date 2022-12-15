@@ -25,7 +25,7 @@ public:
     void scalarDiv(float s); //divisione di un vettore con uno scalare
     void setRandomValue(); //setta valori casuali alle componenti x e y
 
-    void limitsize(); //limita la dimensione di un vettore
+    void limitsize(double max); //limita la dimensione di un vettore
     float dist(const BVector &v); //calcola la distanza tra due vettori
     float norm(); //norma di un vettore
     float angle(const BVector &v); //angolo compreso tra due vettori
