@@ -9,9 +9,9 @@
 
 #include "BVector.h"
 
-int SepRange=20;
-int AllRange=50;
-int CoheRange=50;
+float SepRange=20;
+float AllRange=50;
+float CoheRange=50;
 
 class Boid {
  public:
@@ -32,9 +32,9 @@ class Boid {
     position = BVector(r.x, r.y);
   }
 
-  void separation(const Boid& b);
-  void allignment(const Boid& b);
-  void cohesion(const Boid& b);
+  BVector separation(const std::vector<Boid> boids);
+  BVector allignment(const Boid& b);
+  BVector cohesion(const Boid& b);
 
   BVector seek(BVector v);
 };
