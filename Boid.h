@@ -33,8 +33,8 @@ class Boid {
   }
 
   BVector separation(const std::vector<Boid> boids);
-  BVector allignment(const Boid& b);
-  BVector cohesion(const Boid& b);
+  BVector allignment(const std::vector<Boid> boids);
+  BVector cohesion(const std::vector<Boid> boids);
 
   BVector seek(BVector v);
 };
